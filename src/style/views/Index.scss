@@ -1,0 +1,64 @@
+
+
+ @mixin displayStyleFn($value) {
+    display: flex;
+    align-items: center;
+    justify-content: $value;
+}
+
+@mixin defaultDisplay {
+  display:flex;
+}
+@mixin changTypeA {
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin defaultBorder {
+    border : 1px solid #f00;
+  }
+
+#index{
+    .title{
+        height:30vh;
+        width:100vw;
+
+    }
+   .body{
+        @include defaultDisplay;
+        flex-wrap: wrap;
+      .left{
+          width:40%;
+          @include defaultDisplay;
+          div{
+              width:100%;
+              align-self: stretch;
+              @include defaultBorder;
+              a{
+                @include changTypeA;
+              }
+          }
+      }
+      .right{
+        width:60%;
+        @include defaultDisplay;
+        flex-wrap: wrap;
+
+        div{
+            width:50%;
+            height:100px;
+            @include defaultBorder;
+            a{
+                @include changTypeA;
+              }
+        }
+      }
+
+
+   }
+   .bottom{
+       height:35vh;
+   }
+}

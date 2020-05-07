@@ -4,6 +4,18 @@
   </div>
 </template>
 
-<style lang="scss">
+<script>
+  export default {
+    name:"App",
+    data(){
+      return {
 
+      }
+    }
+  }
+
+</script>
+
+<style lang="scss">
+  @import "@/style/views/App.scss";
 </style>

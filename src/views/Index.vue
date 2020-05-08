@@ -7,7 +7,7 @@
                  <div class="left">
                     
                         <div>
-                          <router-link to="/1">
+                          <router-link to="/reportDanger">
                             <p>隐患上报</p>
                             </router-link>
                         </div>
@@ -91,5 +91,5 @@ export default {
 
 
 <style lang="scss" scoped>
- @import "@/style/views/Index.scss";
+   @import "@/style/views/Index.scss";
 </style>

@@ -23,6 +23,7 @@ Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
 
+
 Vue.use(MintUI)
 
 Vue.use(axios)

@@ -1,10 +1,11 @@
 
 module.exports={
+  
     publicPath:"./",
     outputDir: 'dist',
     assetsDir: 'static',
     lintOnSave: process.env.NODE_ENV === 'development',     //设置true，debugger不会报错
-    productionSourceMap: false,
+    productionSourceMap: process.env.NODE_ENV === 'development',
         chainWebpack: config => {
             config.module
             .rule('scss')
@@ -24,6 +25,23 @@ module.exports={
           )
            
         },
+
+
+        devServer: {
+          open: true,
+          overlay: {
+            warnings: false,
+            errors: true
+          },
+          proxy: {
+            '/api': {
+              target: 'http://localhost:8080',
+              ws: true, 
+              changeOrigin: true,
+            }
+          }
+        },
+      
      
 
       

@@ -2,12 +2,18 @@ import axios from "axios";
 import qs from "qs";
 
 
+console.log(process.env.VUE_APP_BASE_API)
+
 const Axios = axios.create({
-    baseURL: "http://127.0.0.1:8888",
-    withCredentials: true
-})
+    baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
+    withCredentials: false, // send cookies when cross-domain requests
+    timeout: 30000 // request timeout
+  })
+  
+
 Axios.interceptors.request.use(
     config => {
+        debugger;
         console.log("进入请求拦截器...");
         if (config.method === "post") {
             config.data = qs.stringify(config.data)

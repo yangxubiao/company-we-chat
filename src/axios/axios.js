@@ -2,7 +2,6 @@ import axios from "axios";
 import qs from "qs";
 
 
-console.log(process.env.VUE_APP_BASE_API)
 
 const Axios = axios.create({
     baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url

@@ -40,21 +40,12 @@
 </template>
 
 <script>
-
+import scriptMixin from '@/mixins/scriptMixin'
 import myPopup from "@/components/myPopup.vue"
 import { getFullTime } from "@/utils/date"
    export default {
        name:"ReportDanger",
-       beforeRouteEnter(to,from,next){
-              console.log(to);
-
-
-            next(vm=>{
-
-               vm.axios.get("../static/jsons/"+to.meta.url).then(res=>{console.log(res)})
-           
-             });
-       },
+       mixins:[scriptMixin],
        data(){
            return {
              isPopup:false,
@@ -108,6 +99,7 @@ import { getFullTime } from "@/utils/date"
       components:{
          myPopup
       },
+
      methods: {
       openReportTime() {
          this.$refs.picker.open();

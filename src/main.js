@@ -19,6 +19,8 @@ import echarts from 'echarts'
 
 import 'lib-flexible'
 
+import '@/components/CustomComponents/custom.components.common'
+
 Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false

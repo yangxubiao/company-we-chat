@@ -49,7 +49,7 @@
       </div>
       <div class="bottom">
       </div>
-        <myTabbar  />
+        <bmTabbar  />
 
      </div>
 
@@ -57,7 +57,7 @@
 
 <script>
 
-import myTabbar from '@/components/myTabbar.vue'
+
 export default {
   name: 'Index',
   data(){
@@ -65,9 +65,7 @@ export default {
     
     }
   },
-  components:{
-     myTabbar
-  },
+
   mounted() {
    
     var myChart = this.$echarts.init(document.getElementById('echartContainer'));
@@ -92,4 +90,5 @@ export default {
 
 <style lang="scss" scoped>
    @import "@/style/views/Index.scss";
+
 </style>

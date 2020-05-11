@@ -1,4 +1,5 @@
 
+//检查
 const globalInfo  = {
 
     data:{

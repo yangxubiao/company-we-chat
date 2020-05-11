@@ -1,0 +1,21 @@
+.Mark{
+    .mint-cell-wrapper{
+        .mint-cell-text::before{
+            content:"*  ";
+            color:#f00
+        }
+ }
+}
+
+.bmShowSelect {
+
+    .Mark{
+        .mint-cell-wrapper{
+            padding:0
+        }
+    }
+}
+
+.bmShowSelect>a.mint-cell>div.mint-cell-wrapper>div.mint-cell-title{
+    display: none;
+}

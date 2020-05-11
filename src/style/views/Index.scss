@@ -21,11 +21,9 @@
   }
 
 #index{
-    .title{
-        height:30vh;
-        width:100vw;
 
-    }
+
+
    .body{
         @include defaultDisplay;
         flex-wrap: wrap;

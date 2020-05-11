@@ -24,19 +24,17 @@
 
 
 
-          <myTabbar   />
+          <bmTabbar   />
    </div> 
 </template>
 
 <script>
 
-import myTabbar from '@/components/myTabbar.vue'
+
 
   export default {
       name:"Untreated",
-      components:{
-           myTabbar
-       },
+
       data(){
           return {
               value:"",

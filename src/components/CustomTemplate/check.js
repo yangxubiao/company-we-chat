@@ -1,21 +1,41 @@
 
-//检查
+//隐患
+
+const data ={
+    pickerValue:"",
+    form:{
+  
+        reportTime:"",
+        reportTime1:"",
+    }
+  
+}
 const globalInfo  = {
 
-    data:{
-        form:{
- 
-        }
-     },
-
     inputs:[
-        {type:"dateTime",required:true,placeholder:"请选择时间",readonly:true,label:"上报时间",class:"Mark",value:'form.reportTime',click:openReportTime }
+        
+        {
+            keyId:1,name:"bmShowSelectDatetime",
+            config:{
+                require:true,
+                readonly:true,
+                label:"上报时间",
+                placeholder:"请选择时间",
+                value:"reportTime",
+    
+            }
+    }
     ]
 }
 
 
 
-function openReportTime(){console.log(this)}
 
 
-exports.globalInfo=globalInfo
+export {
+    globalInfo,
+    data
+} 
+
+
+

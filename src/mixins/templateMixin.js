@@ -8,8 +8,8 @@ const templateMixin ={
             this.globalInfo=globalInfo.globalInfo
             this.data=globalInfo.data
             break;
-         case "":
-            globalInfo = require("../components/CustomTemplate/danger")
+         case "../components/CustomTemplate/check":
+            globalInfo = require("../components/CustomTemplate/check")
             this.globalInfo=globalInfo.globalInfo
             this.data=globalInfo.data
             break;

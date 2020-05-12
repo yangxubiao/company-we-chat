@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>F0E1F668-623C-46DC-84B4-6AB4E99B92CB</title>
+    <desc>Created with Sketch.</desc>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="🌟icon/待办/已选">
+            <g id="待办" transform="translate(3.000000, 4.000000)">
+                <path d="M32,0 C34.209139,-4.05812251e-16 36,1.790861 36,4 L36,24.9693828 C36,27.1785218 34.209139,28.9693828 32,28.9693828 L23.075,28.969 L21.3242196,31.585094 C20.0955177,33.4210098 17.6111543,33.913254 15.7752385,32.6845521 C15.340365,32.3935095 14.966823,32.0199675 14.6757804,31.585094 L12.924,28.969 L4,28.9693828 C1.790861,28.9693828 2.23265109e-15,27.1785218 0,24.9693828 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L32,0 Z" id="形状结合" fill="#333333"></path>
+                <rect id="矩形" stroke="#FFFFFF" stroke-width="4" x="9" y="11" width="7" height="1" rx="0.5"></rect>
+                <rect id="矩形备份-6" stroke="#FFFFFF" stroke-width="4" x="8" y="19" width="16" height="1" rx="0.5"></rect>
+            </g>
+            <rect id="矩形备份-7" fill="#D8D8D8" opacity="0" x="0" y="0" width="42" height="42"></rect>
+        </g>
+    </g>
+</svg>

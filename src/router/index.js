@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import reportDanger from '@/router/routers/reportDanger'
 import Untreated from '@/router/routers/Untreated'
 import BaseInfo from '@/router/routers/BaseInfo'
+import checkPlan from '@/router/routers/checkPlan'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,7 +16,8 @@ const routes = [
     },
     ...reportDanger,
     ...Untreated,
-    ...BaseInfo
+    ...BaseInfo,
+    ...checkPlan
 
 ]
 

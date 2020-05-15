@@ -1,14 +1,15 @@
 <template>
   <div id="index">
-      <div class="title">
-    
-      </div>
-      <div class="body">
-         <div class="top">
-                <mt-swipe  :auto="0">
+      
+       <!-- 顶部logo -->
+      <div class="title"></div>
 
-                     <mt-swipe-item>
-                         <ul>
+      <!-- body区域 -->
+      <div class="body">
+          <div class="top">
+           <van-swipe >
+                      <van-swipe-item >
+                      <ul>
                              <li>
                                   <router-link to="/reportDanger">
                                        <p><img src="../static/image/h_danger.svg" alt="" /></p>
@@ -35,14 +36,10 @@
                              </li>
                       
                          </ul>
-                    
-              
-                     </mt-swipe-item>
-
-                     <mt-swipe-item>
-
-                          <ul class="h_proposal">
-                             <li>
+                 </van-swipe-item>
+               <van-swipe-item>
+                      <ul class="h_proposal">
+                              <li>
                                   <router-link to="/reportDanger">
                                        <p><img src="../static/image/h_proposal.svg" alt="" /></p>
                                        <h4>隐患上报</h4>
@@ -51,32 +48,33 @@
                     
                       
                          </ul>
-                        
-                     </mt-swipe-item>
-               </mt-swipe>
+              </van-swipe-item>
+       </van-swipe>
          </div>
-                
-
                     <div class="echarts">
                        <div id="echartContainer"></div>
                    </div> 
-      </div>
+        </div>
+
+      <!-- 空白区域 -->
        <div class="bottom">
       </div>
+
+      <!-- 首页底部 -->
         <bmTabbar  />
 
      </div>
-
 </template>
 
 <script>
 
+import {setSize} from '@/utils/tools'
 
 export default {
   name: 'Index',
   data(){
     return {
-    
+      
     }
   },
   methods:{
@@ -86,18 +84,28 @@ export default {
                 title: {
                   text: '堆叠条形图',
                   left:10,
-                  top:15
+                  top:15,
+
+                  textStyle:{
+                     fontSize:setSize
+                  }
               },
               tooltip: {
                   trigger: 'axis',
                   axisPointer: {            // 坐标轴指示器，坐标轴触发有效
                       type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                  },
+                    textStyle:{
+                     fontSize:setSize
                   }
               },
               legend: {
                   data: ['直接访问', '搜索引擎'],
                   right:10,
-                  top:15
+                  top:15,
+                 textStyle:{
+                     fontSize:setSize
+                  }
               },
               color:['#A0B8DA','#92DAB2'],
               grid: {
@@ -119,7 +127,17 @@ export default {
                    },
                     splitLine:{
                       show:false
-                   }
+                   },
+                   nameTextStyle:{
+                     color:"#F00"
+                   },
+                 axisLabel: {
+                   
+                
+                    fontSize:setSize ,
+                }
+              
+             
               },
               yAxis: {
                   type: 'category',
@@ -135,7 +153,11 @@ export default {
                    },
                    splitLine:{
                       show:false
-                   }
+                   },
+                  axisLabel: {
+                    fontSize:setSize ,
+                }
+                  
               },
               series: [
                   {
@@ -143,7 +165,7 @@ export default {
                       type: 'bar',
                       stack: '总量',
                       label: {
-                          show: true,
+                          show: false,
                           position: 'insideRight'
                       },
                       data: [320, 302, 301, 334, 390, 330, 320]
@@ -155,7 +177,7 @@ export default {
                       type: 'bar',
                       stack: '总量',
                       label: {
-                          show: true,
+                          show: false,
                           position: 'insideRight'
                       },
                       data: [820, 832, 901, 934, 1290, 1330, 1320]
@@ -175,5 +197,4 @@ export default {
 
 <style lang="scss" scoped>
    @import "@/style/views/Index.scss";
-
 </style>

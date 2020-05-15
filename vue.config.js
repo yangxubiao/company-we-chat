@@ -27,14 +27,14 @@ module.exports={
                     .exclude.add(resolve('src/icons'))
                     .end()
               
-                  config.module
-                      .rule('scss')
-                      .oneOf('vue')
-                      .use('px2rem-loader')
-                      .loader('px2rem-loader')
-                      .before('postcss-loader') // this makes it work.
-                      .options({ remUnit: 75, remPrecision: 8 })
-                      .end()
+                  // config.module
+                  //     .rule('scss')
+                  //     .oneOf('vue')
+                  //     .use('px2rem-loader')
+                  //     .loader('px2rem-loader')
+                  //     .before('postcss-loader') // this makes it work.
+                  //     .options({ remUnit: 75, remPrecision: 8 })
+                  //     .end()
               
     config
           // https://webpack.js.org/configuration/devtool/#development

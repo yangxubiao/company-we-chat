@@ -17,7 +17,7 @@
 }
 
 @mixin defaultBorder {
-    border : 1px solid #f00;
+    border : 0.5px solid #f00;
   }
 
 #index{
@@ -30,11 +30,11 @@
   
      max-height:110vh;
     .title{
-      width:750px;
-      height:386px;
+      width:375px;
+      height:193px;
       border-radius:0  0 10% 10%;
       background:rgba(213,52,52,1) url("../static/image/logo.png") no-repeat center center;
-      background-size:114px  112px;
+      background-size:57px  56px;
     }
     
 
@@ -43,13 +43,17 @@
         flex-wrap: wrap;
         width:85%;
         .top{
-          width:691px;
-          height:192px;
+          width:100%;
+          height:96px;
           background:rgba(255,255,255,1);
           border-radius:20px;
           position: relative;
-          top: -50px;
-          .mint-swipe{
+          top: -25px;
+          .van-swipe{ 
+              height:100%;
+              border-radius: 20px;
+       
+          .van-swipe-item{
              ul{
                width:100%;
                height:100%;
@@ -67,8 +71,8 @@
                     justify-content: space-around;
                     align-items: center;
                     img{
-                      width:56px;
-                      height:56px;
+                      width:28px;
+                      height:28px;
                     }
                     
                    }
@@ -79,12 +83,11 @@
              justify-content: start;
              }
           }
-          div{
-            background:rgba(255,255,255,1);
-            border-radius:20px;
-           
-          }
-        }
+    
+        
+         }
+      
+      }
       .left{
           width:40%;
           @include defaultDisplay;
@@ -104,7 +107,7 @@
 
         div{
             width:50%;
-            height:100px;
+            height:50px;
             @include defaultBorder;
             a{
                 @include changTypeA;
@@ -116,17 +119,17 @@
    }
 
    .echarts{
-    width:691px;
-    height:745px;
+    width:345.5px;
+    height:372.5px;
     background:rgba(255,255,255,1);
-    border-radius:20px 20px 0px 0px;
+    border-radius:10px 10px 0px 0px;
     #echartContainer{
       width:100%;
       height:100%;
     }
    }
    .bottom{
-      height:200px;
+      height:100px;
       width:100vw;
    }
 

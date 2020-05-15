@@ -1,12 +1,12 @@
 
-const customMixin = {
+const parentMixin = {
   props: {
     config: {
       type: Object,
       required: true,
       default: () => { }
     },
-    that: {
+    thatParent: {
       required: true,
       type: Object,
     },
@@ -15,13 +15,18 @@ const customMixin = {
       type: Object,
       default: () => { }
     },
+    methodsParent: {
+      required: true,
+      type: Object,
+      default: () => { }
+    }
   },
   data () {
     return {
       ...this.globalData,
-
+      ...this.methodsParent,
     }
   },
 }
 
-export default customMixin;
+export default parentMixin;

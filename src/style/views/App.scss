@@ -1,28 +1,34 @@
-*{margin:0;padding:0;box-sizing: border-box;text-decoration: none;color:#333;
-    list-style-type:none;}
-    .mint-tabbar.is-fixed{
-        width:750px;
-        height:98px;
-        background:rgba(255,255,255,1);
-        box-shadow:0px -1px 1px 0px rgba(230,230,230,1);
-        .mint-tab-item-label{
-          font-size:1em;
-          color:#AAAAAA;
-        }
-        .mint-tab-item{
-            display: flex;
-   
-            justify-content: space-around;
-            text-decoration: none;
-            flex-direction: column;
-            .mint-tab-item-icon{
-                width:42px;
-                height:42px;
-                img{
-                    width:42px;
-                    height:42px;
-                }
-            }
-           
-        }
-    } 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #333;
+  list-style-type: none;
+}
+
+.van-hairline--top-bottom.van-tabbar.van-tabbar--fixed {
+  width: 375px;
+  height: 49px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px -0.5px 0.5px 0px rgba(230, 230, 230, 1);
+
+  img {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.container {
+  padding: 16px 16px;
+  background-color: #e6e6e6;
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 165px;
+      height: 40px;
+    }
+  }
+}

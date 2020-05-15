@@ -2,7 +2,7 @@ import tabbarMutation from '../tabbar/mutations'
 import tabbarAction from '../tabbar/actions'
 import tabbarGetters from '../tabbar/getters'
 const state = {
-    tabbarValue:"/"
+    tabbarValue:0
 }
 
 const mutations = {

@@ -3,12 +3,12 @@ const templateMixin = {
   beforeCreate () {
     var globalInfo = {};
     switch (this.$route.meta.url) {
-      case "../components/CustomTemplate/danger":
+      case "danger":
         globalInfo = require("../components/CustomTemplate/danger")
         this.globalInfo = globalInfo.globalInfo
         break;
-      case "../components/CustomTemplate/check":
-        globalInfo = require("../components/CustomTemplate/check")
+      case "check":
+        globalInfo = require("../components/CustomTemplate/check/check")
         this.globalInfo = globalInfo.globalInfo
         break;
       default:

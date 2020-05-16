@@ -21,7 +21,12 @@ function getCheckTime (value) {
   this.thatParent.showPicker = false
 }
 
-
+function PeopleConfirm (value,B,C) {
+console.log(value);
+console.log(B);
+console.log(C);
+  this.thatParent.showPicker = false
+}
 
 
 
@@ -29,5 +34,6 @@ export {
   onConfirm,
   onCancel,
   getCheckPerson,
-  getCheckTime
+  getCheckTime,
+  PeopleConfirm
 }

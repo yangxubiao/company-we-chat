@@ -1,36 +1,33 @@
 <template>
-  <div id="reportDanger">
-    <div class="form">
-      <div class="form-item" v-for="item in globalInfo.inputs" :key="item.keyId">
-        <component :is="item.name" :config="item.config" :that="that"></component>
-      </div>
-    </div>
+  <div>
 
-    <bm-popup v-if="isPopup" :that="that" :context="context" />
-  </div>
+
+
+<!-- <div class="buttons">
+  <el-button @click="getCheckedNodes">通过 node 获取</el-button>
+  <el-button @click="getCheckedKeys">通过 key 获取</el-button>
+  <el-button @click="setCheckedNodes">通过 node 设置</el-button>
+  <el-button @click="setCheckedKeys">通过 key 设置</el-button>
+  <el-button @click="resetChecked">清空</el-button>
+</div> -->
+
+
+<van-field
+  readonly
+  clickable
+  name="picker"
+  :value="value"
+  label="选择器"
+  placeholder="点击选择城市"
+  @click="showPicker = true"
+/>
+
+
+</div>
+
 </template>
-
 <script>
-import templateMixin from '@/mixins/templateMixin'
-
-// import { getFullTime } from '@/utils/date'
-export default {
-  name: 'ReportDanger',
-  mixins: [templateMixin],
-  data() {
-    return {
-      isPopup: false,
-      context: {},
-      that: this
-    }
-  },
-
-  methods: {}
-}
+  export default {
+  
+  };
 </script>
-
-
-
-<style lang="scss" scoped>
-@import '@/style/views/reportDanger.scss';
-</style>

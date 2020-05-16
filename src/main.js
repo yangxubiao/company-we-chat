@@ -8,6 +8,9 @@ import store from './store'
 
 import Vant from 'vant';
 
+
+import 'element-ui/lib/theme-chalk/index.css';
+
 import 'vant/lib/index.css';
 
 import '@/style/common.scss'
@@ -24,6 +27,7 @@ import '@/components/CustomComponents/custom.components.common'
 Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
+
 
 Vue.use(Vant);
 Vue.use(axios)

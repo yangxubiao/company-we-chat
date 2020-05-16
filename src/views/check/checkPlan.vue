@@ -20,6 +20,8 @@
 </template>
 
 <script>
+
+
 import templateMixin from '@/mixins/templateMixin'
 import { checkData } from '@/utils/tools'
 export default {

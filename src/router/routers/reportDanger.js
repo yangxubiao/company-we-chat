@@ -5,7 +5,7 @@ export default [
             path: '/reportDanger',
             name: 'reportDanger',
             meta:{
-               url:"../components/CustomTemplate/danger"
+               url:"danger"
             },
             component: () =>
                 import ('@/views/reportDanger.vue')

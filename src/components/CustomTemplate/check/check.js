@@ -6,7 +6,8 @@ import {
   onCancel,
   getCheckPerson,
   getCheckTime,
-} from './checkMethods'
+  PeopleConfirm
+} from '../checkMethods'
 import { pickerSize } from '@/utils/tools'
 
 const globalInfo = {
@@ -90,7 +91,7 @@ const globalInfo = {
         value: "checkPreson",
         children: [
           {
-            keyId: 6, name: "bmPicker",
+            keyId: 6, name: "bmTree",
             config: {
               title: "检查人员",
               columns: [
@@ -109,7 +110,7 @@ const globalInfo = {
               ["item-height"]: pickerSize,
             },
             methods: {
-              onConfirm: getCheckPerson,
+              PeopleConfirm:PeopleConfirm ,
               onCancel: onCancel
             }
           }
